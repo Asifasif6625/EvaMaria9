@@ -36,10 +36,7 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     SONG_TXT = """<b>🎶 song download 🎶</b>
 - downlod your favourite musics, listening to music 
-   <b>🎵command🎵</b>
- /song [song name] - send me 😍
-
-By @malayalamvibe""" 
+   <b>🎵command🎵</b> """
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Eva Maria Supports both url and alert inline buttons.
