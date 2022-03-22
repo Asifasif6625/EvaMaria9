@@ -34,6 +34,9 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+    SONG_TXT = """Help: <b>song download</b>
+Coming soon! 
+By @mlavibe""" 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Eva Maria Supports both url and alert inline buttons.
