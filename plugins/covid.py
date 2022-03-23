@@ -33,17 +33,14 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**𝙲𝙾𝚅𝙸𝙳 𝟷𝟿 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽**--
 ᚛› Country : `{country}`
-᚛› Actived : `{active}`
-᚛› Confirmed : `{confirmed}`
-᚛› Deaths : `{deaths}`
-᚛› ID : `{info_id}`
-᚛› Last Update : `{last_update}`
-᚛› Latitude : `{latitude}`
-᚛› Longitude : `{longitude}`
-᚛› Recovered : `{recovered}`"""
+᚛› Actived : `{active}`😱
+᚛› Confirmed : `{confirmed}`🥶
+᚛› Deaths : `{deaths}`😭
+᚛› ID : `{info_id}`🧿
+᚛› Last Update : `{last_update}`📯
+᚛› Latitude : `{latitude}`🔋
+᚛› Longitude : `{longitude}`🧮
+᚛› Recovered : `{recovered}`🤧"""
         return covid_info
     except Exception as error:
         return error
-else:
-            await message.reply_text("🙄 ഏതെങ്കിലും രാജ്യത്തിന്റെ പേര് കൊട്.. ", quote=True)
-            return
