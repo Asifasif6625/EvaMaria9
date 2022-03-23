@@ -376,13 +376,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/EvaMariaBot?startgroup=true')
+            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true'), 
+            InlineKeyboardButton('🥶𝐔𝐩𝐝𝐚𝐭𝐞🥶', url='https://t.me/malayalamvibe'),
+            InlineKeyboardButton('💖𝐄𝐱 𝐟𝐮𝐫𝐭𝐡𝐞𝐫💖', callback_data='help')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('📛𝐃𝐞𝐥𝐞𝐭𝐞 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞📛', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -392,14 +390,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manuel Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🤯𝐒𝐭𝐨𝐫𝐚𝐠𝐞🤯', callback_data='stats'), 
+            InlineKeyboardButton('🥴𝐆𝐨 𝐛𝐚𝐜𝐤🥴', callback_data='start')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('💖 New further 💖', callback_data='extra')
-            ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('📛𝐃𝐞𝐥𝐞𝐭𝐞 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞📛', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
