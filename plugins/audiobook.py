@@ -4,7 +4,6 @@ import time
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import User, Message, Document 
-from gtts import gTTS
 from info import DOWNLOAD_LOCATION
   
 Thanks = """ Thats The End Of Your Audio Book, And Thanks for Using this Service"""
