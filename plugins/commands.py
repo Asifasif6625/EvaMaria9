@@ -19,13 +19,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/EvaMariaBot?startgroup=true')
+            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true'), 
+            InlineKeyboardButton('🥶𝐔𝐩𝐝𝐚𝐭𝐞🥶', url='https://t.me/malayalamvibe'),
+            InlineKeyboardButton('💖𝐎𝐭𝐡𝐞𝐫 𝐟𝐮𝐫𝐭𝐡𝐞𝐫💖', callback_data='help')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('📛𝐃𝐞𝐥𝐞𝐭𝐞 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞📛', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
