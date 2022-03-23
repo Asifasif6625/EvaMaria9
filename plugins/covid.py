@@ -44,3 +44,6 @@ def covid_info(country_name):
         return covid_info
     except Exception as error:
         return error
+else:
+            await message.reply_text("🙄 ഏതെങ്കിലും രാജ്യത്തിന്റെ പേര് കൊട്.. ", quote=True)
+            return
