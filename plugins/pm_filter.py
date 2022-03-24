@@ -314,8 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     print(e)
             f_caption=f_caption
         if f_caption is None:
-            f_caption = f"{files.file_name}"
-        
+            f_caption = f"{files.file_name}"    
         try:
             username = ab[0]
         except
