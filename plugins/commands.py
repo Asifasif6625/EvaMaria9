@@ -19,7 +19,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true'), 
+            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true')
+            ],[
             InlineKeyboardButton('🥶𝐔𝐩𝐝𝐚𝐭𝐞🥶', url='https://t.me/malayalamvibe'),
             InlineKeyboardButton('💖𝐄𝐱 𝐟𝐮𝐫𝐭𝐡𝐞𝐫💖', callback_data='help')
             ],[
