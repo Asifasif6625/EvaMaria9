@@ -376,7 +376,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true'), 
+            InlineKeyboardButton('🧿𝐀𝐝𝐝 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩🧿', url='http://t.me/MLAVIBBot?startgroup=true')
+            ],[
             InlineKeyboardButton('🥶𝐔𝐩𝐝𝐚𝐭𝐞🥶', url='https://t.me/malayalamvibe'),
             InlineKeyboardButton('💖𝐄𝐱 𝐟𝐮𝐫𝐭𝐡𝐞𝐫💖', callback_data='help')
             ],[
@@ -479,7 +480,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "corona":
         buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('🥶delete this message🥶', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
