@@ -314,23 +314,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     print(e)
             f_caption=f_caption
         if f_caption is None:
-            f_caption = f"{files.file_name}"    
-        try:
-            username = ab[0]
-        except
-            pass
-        try:
-            bot = await client.get_me()
-            username = bot.username
-            ab.append(username)
-        except FloodWait as e:
-                asyncio.sleep(e.x)
-                bot = await client.get_me()
-                username = bot.username
-                ab.append(username)
+            f_caption = f"{files.file_name}" 
+  
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{username}?start={file_id}")
+                return
+            elif settings['botpm']:
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
                 await client.send_cached_media(
@@ -369,8 +360,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption
-            )
-
+            
+        ) 
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
