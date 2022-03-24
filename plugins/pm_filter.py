@@ -315,7 +315,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption=f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-         buttons =  [[
+        buttons =  [
+                   [
                 InlineKeyboardButton('🧼𝐃𝐞𝐥𝐞𝐭𝐞 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞🧼', callback_data='help')
         ]]  
         try:
